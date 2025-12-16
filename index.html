@@ -36,7 +36,9 @@
                     <p>32 selecciones competirán por alzar la copa más codiciada del fútbol en estadios de última generación distribuidos por las tres naciones anfitrionas.</p>
                 </div>
                 <div>
-                    <div style="font-size: 10rem; text-align: center;">⚽</div>
+                    <div style="font-size: 10rem; text-align: center;">
+                        <img src="Gemini_Generated_Image_ikmxc5ikmxc5ikmx.png" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    </div>
                     <div class="host-countries">
                         <div class="country-card">🇪🇸 España</div>
                         <div class="country-card">🇵🇹 Portugal</div>
@@ -50,7 +52,9 @@
         <section id="balon" class="section">
             <h2>El Balón Oficial</h2>
             <div class="balon-showcase">
-                <div class="balon-image"></div>
+                <div class="balon-image">
+                    <img src="balón creado IA mundial 2030.png" style="width: 80%; height: 80%; object-fit: contain; padding: 10px;">
+                </div>
                 <div class="balon-info">
                     <h3>Al Rihla 2030 - "El Viaje"</h3>
                     <p>El balón oficial del Mundial 2030 representa la unión de tres culturas en un solo diseño. Sus colores azul, rojo y verde simbolizan los países anfitriones.</p>
@@ -206,7 +210,7 @@
             <div id="productosContainer" class="tienda-grid">
                 <div class="producto-card">
                     <div class="producto-image" style="background: none;">
-                        <img src="primera equipacion espana.jpg" alt="Camiseta Oficial España" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="primera equipación España.jpg" alt="Camiseta Oficial España" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="producto-info">
                         <h3>Camiseta Oficial España</h3>
@@ -217,22 +221,33 @@
                 </div>
                 <div class="producto-card">
                     <div class="producto-image" style="background: none;">
-                        <img src="segunda equipacion portugal.jpg" alt="Camiseta Oficial Portugal" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="primera equipación Alemania.jpg" alt="Camiseta Oficial Portugal" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="producto-info">
-                        <h3>Camiseta Oficial Portugal</h3>
-                        <p>Camiseta oficial de la selección portuguesa</p>
+                        <h3>Camiseta Oficial Alemania</h3>
+                        <p>Camiseta oficial de la selección alemana para el mundial 2030</p>
                         <div class="producto-precio">89,99 €</div>
                         <button class="btn-comprar">Añadir al Carrito</button>
                     </div>
                 </div>
                 <div class="producto-card">
                     <div class="producto-image" style="background: none;">
-                        <img src="segunda equipacion marruecos.jpg" alt="Camiseta Oficial Marruecos" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="primera equipacion italia.jpg" alt="Camiseta Oficial Italia" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="producto-info">
-                        <h3>Camiseta Oficial Marruecos</h3>
-                        <p>Camiseta oficial de la selección marroquí</p>
+                        <h3>Camiseta Oficial Italia</h3>
+                        <p>Camiseta oficial de la selección italiana para el mundial 2030</p>
+                        <div class="producto-precio">89,99 €</div>
+                        <button class="btn-comprar">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-image" style="background: none;">
+                        <img src="primera equipación Argentina.jpg" alt="Camiseta Oficial Argentina" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Camiseta Oficial Argentina</h3>
+                        <p>Camiseta oficial de la selección argentina para el mundial 2030</p>
                         <div class="producto-precio">89,99 €</div>
                         <button class="btn-comprar">Añadir al Carrito</button>
                     </div>
@@ -244,12 +259,14 @@
                     <div class="producto-info">
                         <h3>Balón Al Rihla 2030</h3>
                         <p>Réplica oficial del balón del Mundial</p>
-                        <div class="producto-precio">149,99 €</div>
+                        <div class="producto-precio">99,99 €</div>
                         <button class="btn-comprar">Añadir al Carrito</button>
                     </div>
                 </div>
                 <div class="producto-card">
-                    <div class="producto-image">🧢</div>
+                    <div class="producto-image">
+                        <img src="gorra oficial.jpg" alt="Gorra oficial mundial 2030" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    </div>
                     <div class="producto-info">
                         <h3>Gorra Oficial Mundial 2030</h3>
                         <p>Gorra ajustable con logo oficial</p>
@@ -258,7 +275,9 @@
                     </div>
                 </div>
                 <div class="producto-card">
-                    <div class="producto-image">🧣</div>
+                    <div class="producto-image">
+                        <img src="bufanda.png" alt="bufanda oficial mundial 2030" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    </div>
                     <div class="producto-info">
                         <h3>Bufanda Conmemorativa</h3>
                         <p>Bufanda oficial del Mundial 2030</p>
@@ -324,46 +343,41 @@
 
     <script>
         function showSection(sectionId) {
+            // 1. Buscamos todas las secciones y botones
             const sections = document.querySelectorAll('.section');
             const buttons = document.querySelectorAll('.nav-btn');
             
-            sections.forEach(section => section.classList.remove('active'));
-            buttons.forEach(button => button.classList.remove('active'));
-            
-            document.getElementById(sectionId).classList.add('active');
-            event.target.classList.add('active');
-        }
-
-        function handleFiles(files) {
-            const container = document.getElementById('productosContainer');
-            
-            Array.from(files).forEach((file, index) => {
-                const reader = new FileReader();
-                
-                reader.onload = function(e) {
-                    const productCard = document.createElement('div');
-                    productCard.className = 'producto-card';
-                    productCard.innerHTML = `
-                        <div class="producto-image" style="background: none;">
-                            <img src="${e.target.result}" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="producto-info">
-                            <h3>Nueva Camiseta ${index + 1}</h3>
-                            <p>Producto agregado recientemente</p>
-                            <div class="producto-precio">89,99 €</div>
-                            <button class="btn-comprar">Añadir al Carrito</button>
-                        </div>
-                    `;
-                    container.appendChild(productCard);
-                };
-                
-                reader.readAsDataURL(file);
+            // 2. Ocultamos todas las secciones eliminando la clase 'active'
+            sections.forEach(section => {
+                section.classList.remove('active');
             });
+            
+            // 3. Quitamos el color de "activo" a todos los botones
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // 4. Mostramos la sección que queremos
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            } else {
+                console.error("No se encontró la sección con ID: " + sectionId);
+            }
+            
+            // 5. Ponemos el botón que pulsamos en estado "activo"
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            }
         }
-
-        document.querySelectorAll('.btn-comprar').forEach(btn => {
-            btn.addEventListener('click', function() {
-                alert('¡Producto añadido al carrito! Esta es una demostración.');
+    
+        // Código para que los botones de compra funcionen y den un mensaje
+        document.addEventListener('DOMContentLoaded', () => {
+            const buyButtons = document.querySelectorAll('.btn-comprar');
+            buyButtons.forEach(btn => {
+                btn.onclick = function() {
+                    alert('⚽ ¡Redirigiendo a la plataforma segura de pago de la FIFA 2030!');
+                };
             });
         });
     </script>
